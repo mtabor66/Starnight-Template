@@ -1,0 +1,39 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Main
+  screenshotPath: ../images/template-previews/home.png
+-->
+{% extends "/Starnight/templates/layouts/base.html" %}
+
+{% block body %}
+
+{# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
+
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+  {# Hero banner #}
+
+  {% include_dnd_partial path="../sections/hero-video.html" %}
+
+  {# Two column image right #}
+
+  {% include_dnd_partial path="../sections/download.html" %}
+
+  {# Testimonial Slider #}
+
+  {% include_dnd_partial path="../sections/testimonials.html" %}
+
+  {# Features #}
+
+  {% include_dnd_partial path="../sections/features.html" %}
+
+  {# Design #}
+
+  {% include_dnd_partial path="../sections/design.html" %}
+
+{% end_dnd_area %}
+{% endblock body %}

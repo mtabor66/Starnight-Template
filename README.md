@@ -1,26 +1,13 @@
-# "Starnight" One Page Website Template
-
-"Starnight" is a one page website template made by [Peter Finlan](http://peterfinlan.com/).
-
-[Download](https://dribbble.com/shots/1592140-Freebie-Starnight-HTML5-CSS3-Website-Template)
-
-[Demo](https://dribbble.com/shots/1592140-Freebie-Starnight-HTML5-CSS3-Website-Template)
-
-## License
-
-Use it freely but please do not republish, distribute or sell "as-is".
-
-## Contributing
-
-I encourage contributions to all of my templates and I will endeavour to review all pull requests submitted.
-
-Before contributing, please see the Contributing Guide (Coming soon).
+# "Starnight" HubSpot Theme
+A free theme for built for HubSpot CMS. 
 
 ## Credits 
+### One Pege Vanilla Version
+Vanilla version by [Peter Finlan](https://peterfinlan.com). Used with [Permission](https://github.com/peterfinlan/Starnight-Template)
 
 ### Design
 
-Designed by [Blaz Robar](http://www.blazrobar.com/)
+Designed by [Blaz Robar](https://blazrobar.com/licensing/)
 
 ### Bootstrap
 
@@ -48,7 +35,7 @@ Designed by [Blaz Robar](http://www.blazrobar.com/)
 
 ## Misc
 
-Follow Pete: [Twitter](https://twitter.com/peterfinlan), [Dribbble](http://www.dribbble.com/peterfinlan), [GitHub](https://github.com/peterfinlan)
+Follow Michelle: [GitHub](https://github.com/mtabor66), [LinkedIn](https://www.linkedin.com/in/mtabor66)
 
 
 

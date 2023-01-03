@@ -1,0 +1,23 @@
+{
+  "label": "Starnight",
+  "author": {
+    "name": "Red Anthos",
+    "email": "michelle@redanthos.com",
+    "url": "https://www.redanthos.com/"
+	},
+  "documentation_url": "https://starnight.redanthos.com/documentation",
+  "example_url": "https://starngiht.redanthos.com",
+  "preview_path": "./templates/home.html",
+  "screenshot_path": "./images/template-previews/home.png",
+  "enable_domain_stylesheets": false,
+  "license": "./license.txt",
+  "responsive_breakpoints": [
+    {
+      "name": "mobile",
+      "mediaQuery": "@media (max-width: 767px)",
+      "previewWidth": {
+        "value": 477
+      }
+    }
+  ]
+}

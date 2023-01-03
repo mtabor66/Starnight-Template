@@ -1,0 +1,55 @@
+<!--
+  templateType: section
+  label: Testimonial Slider
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/cards.png
+  description: "Two column layout with text on left and image on right."
+-->
+
+{% dnd_section "testimonial", padding={ "default" :{"top": 130,
+"right": 0,
+"bottom": 130,
+"left": 0}
+} background_image={
+  "backgroundPosition": "CENTER_LEFT",
+  "backgroundSize": "contain",
+  "imageUrl": context.background_image or get_asset_url("Starnight/images/theme-assets/tBG01.jpg")
+}, background_color=#5b6869 %}
+    {% dnd_column padding={ "default" :{"top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0}
+    } %}
+        {% dnd_row %}
+            {% dnd_module
+        path="@hubspot/rich_text",
+        html={{ context.column_one_content or "<section class='testimonials' id='media'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-12 text-center'>
+                <div id='firstSlider'>
+                  <ul class='slides'>
+                    <li>
+                      <div class='avatar'><img src="+ get_asset_url('/Starnight/images/theme-assets/av-blaz.png') +" alt='Blaz Robar'></div>
+                      <p>I couldnt possibly use my own eyes to look at the stars, thansk Starnught App.</p>
+                    </li>
+                    <li>
+                      <div class='avatar'><img src=" + get_asset_url('/Starnight/images/theme-assets/av-pete.png') +" alt='Pete Finlan'></div>
+                      <p>Staring at the stars has given me feels like never before.</p>
+                    </li>
+                    <li>
+                      <div class='avatar'><img src=" + get_asset_url('/Starnight/images/theme-assets/av-doge.png') +" alt='Doge Finbar'></div>
+                      <p>Much flat, many design, so app. Wow.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>" }}
+      %}
+      {% end_dnd_module %}
+
+        {% end_dnd_row %}
+    {% end_dnd_column %}
+{% end_dnd_section %}

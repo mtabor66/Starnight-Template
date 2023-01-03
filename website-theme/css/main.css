@@ -1,0 +1,52 @@
+/* Theme base styles */
+
+/* Tools
+Any animations, or functions used throughout the project.
+Note: _macros.css needs to be imported into each stylesheet where macros are used and not included here
+*/
+
+/* Generic
+This is where reset, normalize & box-sizing styles go.
+*/
+
+{% include '/Starnight/css/generic/_reset.css' %}
+{% include '/Starnight/css/generic/_normalize.css' %}
+
+/* Objects
+Non-cosmetic design patterns including grid and layout classes)
+*/
+
+{% include '/Starnight/css/objects/_layout.css' %}
+{% include '/Starnight/css/plugins/bootstrap.css' %}
+{% include '/Starnight/css/objects/_containers-dnd.css' %}
+
+/* Elements
+Base HMTL elements are styled in this section (<body<, <h1>, <a>, <p>, <button> etc.)
+*/
+
+{% include '/Starnight/css/elements/_typography.css' %}
+{% include '/Starnight/css/elements/_buttons.css' %}
+{% include '/Starnight/css/elements/_forms.css' %}
+{% include '/Starnight/css/elements/_tables.css' %}
+
+/* Components
+Specific pieces of UI that are stylized. Typically used for global partial styling
+*/
+
+{% include '/Starnight/css/components/_header.css' %}
+{% include '/Starnight/css/components/_default-modules.css' %}
+{% include '/Starnight/css/components/_flexslider.css' %}
+{% include '/Starnight/css/plugins/jquery.fancybox.css' %}
+
+/* Utilities
+Helper classes with ability to override anything that comes before it
+*/
+
+{% include '/Starnight/css/utilities/_helper.css' %}
+{% include '/Starnight/css/utilities/_queries.css' %}
+{% include '/Starnight/css/utilities/_waypoints.css' %}
+
+
+{% include '/Starnight/css/theme-defaults.css' %}
+{% include '/Starnight/css/theme-overrides.css' %}
+
