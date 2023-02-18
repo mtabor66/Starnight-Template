@@ -1,0 +1,106 @@
+[ {
+  "id" : "945ab312-ec3f-37f2-3a80-a60e62dcbd25",
+  "name" : "cta_style",
+  "display_width" : null,
+  "label" : "CTA Style",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "hs-cta", "HubSpot CTA" ], [ "buttons", "Theme Buttons" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice"
+}, {
+  "id" : "73a741f4-99b5-1f01-0bdf-2c47e5268f40",
+  "name" : "theme_buttons",
+  "display_width" : null,
+  "label" : "Theme Buttons",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "945ab312-ec3f-37f2-3a80-a60e62dcbd25",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "buttons",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "9d89acd9-a0e8-eb53-1b3f-628bccaa6b76",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.redanthos.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "bd22cad1-73fc-4a6d-33b4-09e0dd674d09",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get Started"
+  }, {
+    "id" : "2ea832fe-0edd-e8b3-01f5-9e7043aeee08",
+    "name" : "button_style_options",
+    "display_width" : null,
+    "label" : "Button Style Options",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "primary-button", "Primary" ], [ "secodnary-button", "Secondary" ], [ "tertiary-button", "Tertiary" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "type" : "choice"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_link" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.redanthos.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    },
+    "button_text" : "Get Started"
+  }
+}, {
+  "id" : "6f6b4845-e67d-1d3b-5ce2-794979ef85a5",
+  "name" : "hubspot_cta",
+  "display_width" : null,
+  "label" : "HubSpot CTA",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "945ab312-ec3f-37f2-3a80-a60e62dcbd25",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "hs-cta",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "cta",
+  "default" : "92ef17dd-def0-4779-9ccd-cace2ad377c9"
+} ]

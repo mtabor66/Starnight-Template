@@ -20,11 +20,7 @@
         path="@hubspot/rich_text",
         html={{ context.column_one_content or "<section class='hero' id='hero'>
         <div class='container'>
-          <div class='row'>
-            <div class='col-md-12 text-right'>
-              <a href='#'><i class='fa fa-navicon fa-2x nav_slide_button'></i></a>
-            </div>
-          </div>
+          
           <div class='row'>
             <div class='col-md-8 col-md-offset-2 text-center'>
               <h1 class='animated bounceInDown'>Starnight App</h1>
@@ -38,14 +34,17 @@
           </div>
           <div class='row'>
             <div class='col-md-6 col-md-offset-3 text-center'>
-              <a href='' class='get-started-btn'>Get Started</a>
+              <a href='' class='primary-button'>Get Started</a>
             </div>
           </div>
         </div>
       </section>" }}
       %}
       {% end_dnd_module %}
-
+      {% end_dnd_row %}
+      {% dnd_row %}
+{% dnd_module path="/Starnight/modules/CTA Button" %}
+{% end_dnd_module %}
         {% end_dnd_row %}
     {% end_dnd_column %}
 {% end_dnd_section %}

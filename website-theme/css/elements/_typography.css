@@ -32,15 +32,9 @@ a {
 }
 
 /* Headings */
+h1 { font-size: 60px; font-weight: 100; color: #fff; letter-spacing: -1px; margin: 100px 0 20px 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 1.4rem;
-}
+h2 { font-size: 55px; font-weight: 100; color: #fff; margin: 100px 0 20px 0; }
 
 /* Lists */
 
@@ -143,8 +137,8 @@ menu, ol, ul { padding: 0 0 0 40px; }
 /* * Corrects list images handled incorrectly in IE 7. */
 nav ul, nav ol { list-style: none; list-style-image: none; }
 
-.hero h1 { font-size: 60px; font-weight: 100; color: #fff; letter-spacing: -1px; margin: 100px 0 20px 0; }
-.download-now h1 { font-size: 55px; font-weight: 100; color: #fff; margin: 100px 0 20px 0; }
-.testimonials h1 { color: #fff; font-size: 43px; font-weight: 100; margin: 20px 0 80px 0; font-style: italic; }
-.features h1 { color: #9197a8; font-size: 15px; margin: 0 0 20px 0; text-transform: uppercase; }
-.design h1 { color: #abbcc3; font-size: 38px; font-weight: 300; margin-top: 0; }
+
+
+.testimonials h2 { color: #fff; font-size: 43px; font-weight: 100; margin: 20px 0 80px 0; font-style: italic; }
+.features h2 { color: #9197a8; font-size: 15px; margin: 0 0 20px 0; text-transform: uppercase; }
+.design h2 { color: #abbcc3; font-size: 38px; font-weight: 300; margin-top: 0; }

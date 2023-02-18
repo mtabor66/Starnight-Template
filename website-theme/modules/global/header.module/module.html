@@ -1,0 +1,19 @@
+<div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+          {% if "Landing" in widget_data.header.value %}
+	{% else %}
+          <nav class="pull">
+            <ul class="top-nav">
+              {% set node = menu(module.menu) %}
+              {% for item in node %}
+                {% if loop.last %}
+                <li class="nav-last"><a href="{{ item.url }}">{{ item.label }} <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                {% elif !loop.first %}
+                <li><a href="{{ item.url }}">{{ item.label }} <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
+        </div>
+      </div>

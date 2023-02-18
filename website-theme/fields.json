@@ -93,15 +93,11 @@
             "styles": true
           }
         },
-        "inherited_value": {
-          "property_value_paths": {
-            "color": "theme.global_colors.quaternary.color"
-          }
-        },
         "default": {
           "fallback": "sans-serif",
           "font": "Lato",
-          "font_set": "GOOGLE"
+          "font_set": "GOOGLE",
+          "color": "#ffffff"
         }
       },
       {
@@ -252,7 +248,7 @@
             "type": "font",
             "inherited_value": {
               "property_value_paths": {
-                "color": "theme.global_fonts.primary.color",
+                "color": "theme.global_fonts.secondary.color",
                 "fallback": "theme.global_fonts.primary.fallback",
                 "font": "theme.global_fonts.secondary.font",
                 "font_set": "theme.global_fonts.secondary.font_set"
@@ -293,7 +289,7 @@
             "type": "font",
             "inherited_value": {
               "property_value_paths": {
-                "color": "theme.global_fonts.primary.color",
+                "color": "theme.global_fonts.secondary.color",
                 "fallback": "theme.global_fonts.primary.fallback",
                 "font": "theme.global_fonts.secondary.font",
                 "font_set": "theme.global_fonts.secondary.font_set"
@@ -421,7 +417,7 @@
             },
             "inherited_value": {
               "property_value_paths": {
-                "color": "theme.global_fonts.primary.color",
+                "color": "theme.global_fonts.secondary.color",
                 "fallback": "theme.global_fonts.primary.fallback",
                 "font": "theme.global_fonts.primary.font",
                 "font_set": "theme.global_fonts.primary.font_set"

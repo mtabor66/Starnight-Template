@@ -1,0 +1,6 @@
+<!-- module html  -->
+{% if module.cta_style == "buttons" %} 
+<a href='{{ module.theme_buttons.button_link.url }}' class='{{ module.theme_buttons.button_style_options }}'>{{ module.theme_buttons.button_text }}</a>
+{% elif module.cta_style == "hs-cta" %}
+{% cta guid="{{ module.hubspot_cta }}" %}
+{% endif %}

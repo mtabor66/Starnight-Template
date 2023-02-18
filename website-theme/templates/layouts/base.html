@@ -22,6 +22,28 @@
     {# To see a full list of what is included via standard_header_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
     {{ standard_header_includes }}
   </head>
+
+	{# --------- Header + Footer options -------- #}
+	{# Header #}
+	{% choice "header" label='Header Option', value='Default', choices='Default, Landing', required=True, export_to_template_context=True %}
+	{% set header_class = widget_data.header.value %}
+	{% if header_class == 'Landing' %}
+	  {% set header_class = 'landing' %}
+		{% elif header_class == 'Default' %}
+	  {% set header_class = 'default' %}
+	{% endif %}
+	
+	{# Footer #}
+	{% choice "footer" label='Footer Option', value='Default', choices='Default, Landing', required=True, export_to_template_context=True %}
+
+	{% set footer_class = widget_data.footer.value %}
+	{% if footer_class == 'default' %}
+	  {% set footer_class = 'default' %}
+	{% elif footer_class == 'landing' %}
+	  {% set footer_class = 'landing' %}
+	{% endif %}
+	{# --------- END Header + Footer options -------- #}
+
   <body>
     <div class="body-wrapper {{ builtin_body_classes }}">
       {% block header %}
